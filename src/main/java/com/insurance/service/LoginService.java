@@ -1,6 +1,6 @@
-package com.insurance.TaskNo139.service;
+package com.insurance.service;
 
-import com.insurance.TaskNo139.model.Login;
+import com.insurance.model.Login;
 
 public interface LoginService {
 	public Login getLogin(Login login, Integer id);
