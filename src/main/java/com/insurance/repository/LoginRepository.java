@@ -1,11 +1,11 @@
-package com.insurance.TaskNo139.repository;
+package com.insurance.repository;
 
 import java.io.Serializable;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.insurance.TaskNo139.model.Login;
+import com.insurance.model.Login;
 
 @Repository
 public interface LoginRepository extends CrudRepository<Login, Serializable> {

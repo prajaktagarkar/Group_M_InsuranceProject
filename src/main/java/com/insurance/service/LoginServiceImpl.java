@@ -1,10 +1,10 @@
-package com.insurance.TaskNo139.service;
+package com.insurance.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.insurance.TaskNo139.model.Login;
-import com.insurance.TaskNo139.repository.LoginRepository;
+import com.insurance.model.Login;
+import com.insurance.repository.LoginRepository;
 
 @Service
 public class LoginServiceImpl implements LoginService{
