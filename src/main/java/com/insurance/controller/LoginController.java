@@ -18,7 +18,7 @@ public class LoginController {
 
 	 @Autowired
 	  private LoginService loginService;
-	  
+	  //mapping
 	  @PutMapping("/check/{id}")
 	  public ResponseEntity<Login> getLogin(@PathVariable("id") Integer id,@RequestBody Login login){
 		  Login log = loginService.getLogin(login, id);
