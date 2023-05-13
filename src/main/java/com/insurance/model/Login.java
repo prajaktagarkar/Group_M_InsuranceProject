@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="registrationdetail")
+@Table(name="Credentials")
 public class Login {
 	
 		@Id

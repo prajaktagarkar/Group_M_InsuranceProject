@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,14 +14,24 @@ import com.insurance.model.Login;
 import com.insurance.service.LoginService;
 
 @RestController
-@RequestMapping("/login")
+@RequestMapping("/User")
 public class LoginController {
 
-	 @Autowired
-	  private LoginService loginService;
-	  //mapping
-	  @PutMapping("/check/{id}")
-	  public ResponseEntity<Login> getLogin(@PathVariable("id") Integer id,@RequestBody Login login){
-		  Login log = loginService.getLogin(login, id);
-		  return ResponseEntity.ok().body(log);
-}}
+	@Autowired
+	private LoginService LoginService;
+	
+	
+	@PostMapping("/save")
+	
+	public ResponseEntity<String> saveData(@RequestBody Login Login){
+		Login stud = LoginService.saveData(Login);
+		return ResponseEntity.ok().body("Registered Successfully");
+	}
+	
+	@PutMapping("/login")
+	public ResponseEntity<Login> getLoginData(@RequestBody Login Login){
+		Login login1 = LoginService.getLogin(Login);
+		return ResponseEntity.ok().body(login1);
+	}
+		  
+}
