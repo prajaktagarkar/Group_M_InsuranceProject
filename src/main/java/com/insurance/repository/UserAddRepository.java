@@ -1,0 +1,11 @@
+package com.insurance.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.insurance.model.UserAdd;
+
+@RestController
+public interface UserAddRepository extends JpaRepository<UserAdd, Integer>{
+
+}
