@@ -3,7 +3,6 @@ package com.insurance.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,7 +23,8 @@ public class LoginController {
 	@PostMapping("/save")
 	
 	public ResponseEntity<String> saveData(@RequestBody Login Login){
-		Login stud = LoginService.saveData(Login);
+		@SuppressWarnings("unused")
+		Login login= LoginService.saveData(Login);
 		return ResponseEntity.ok().body("Registered Successfully");
 	}
 	
