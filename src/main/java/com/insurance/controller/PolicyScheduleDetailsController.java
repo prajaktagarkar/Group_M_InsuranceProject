@@ -12,7 +12,7 @@ import com.insurance.service.PolicyScheduleDetailsService;
 
 @RestController
 public class PolicyScheduleDetailsController {
-	
+	//Injecting service
 	@Autowired
 	private PolicyScheduleDetailsService policyScheduleDetailsService;
 
