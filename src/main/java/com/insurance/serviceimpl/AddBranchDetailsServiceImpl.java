@@ -6,8 +6,6 @@ import org.springframework.stereotype.Service;
 import com.insurance.model.AddBranchDetails;
 import com.insurance.repository.AddBranchDetailsRepository;
 import com.insurance.service.AddBranchDetailsService;
-
-
 @Service
 public class AddBranchDetailsServiceImpl implements AddBranchDetailsService {
 	@Autowired

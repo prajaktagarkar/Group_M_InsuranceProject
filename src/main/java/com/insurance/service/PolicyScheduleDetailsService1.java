@@ -1,5 +1,7 @@
 package com.insurance.service;
 
+
+
 import com.insurance.model.PolicyScheduleDetails1;
 
 public interface PolicyScheduleDetailsService1 {

@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.insurance.model.PolicyScheduleDetails1;
 import com.insurance.service.PolicyScheduleDetailsService1;
-
-
 @RestController
 public class PolicyScheduleDetailsController1 {
 @Autowired

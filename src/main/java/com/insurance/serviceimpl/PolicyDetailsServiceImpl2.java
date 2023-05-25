@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 import com.insurance.repository.PolicyDetailsRepository2;
 import com.insurance.service.PolicyDetailsService2;
 
-
 @Service
 public class PolicyDetailsServiceImpl2 implements PolicyDetailsService2 {
 	@Autowired

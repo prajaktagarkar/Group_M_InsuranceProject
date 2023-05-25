@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.insurance.model.TransectionDetails;
 import com.insurance.service.TransectionDetailsService;
 
-
 @RestController
 public class TransectionDetailsController {
 	@Autowired

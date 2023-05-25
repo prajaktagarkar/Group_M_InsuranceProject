@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 import com.insurance.repository.DeletePremiumDetailsRepository;
 import com.insurance.service.DeletePremiumDetailsService;
 
-
 @Service
 public class DeletePremiumDetailsServiceImpl implements DeletePremiumDetailsService {
 	@Autowired

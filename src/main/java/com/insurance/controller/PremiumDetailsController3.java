@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.insurance.model.PremiumDetails3;
 import com.insurance.service.PremiumDetailsService3;
 
-
 @RestController
 public class PremiumDetailsController3 {
 	@Autowired

@@ -6,8 +6,6 @@ import com.insurance.model.TransectionDetails;
 import com.insurance.repository.TransectionDetailsRepository;
 import com.insurance.service.TransectionDetailsService;
 
-
-
 public class TransectionDetailsServiceImpl implements TransectionDetailsService {
 	@Autowired
 	private  TransectionDetailsRepository transectionDetailsRepository;
