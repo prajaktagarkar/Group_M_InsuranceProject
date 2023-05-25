@@ -13,6 +13,7 @@ import javax.persistence.Table;
  */
 
 
+
 @Entity
 @Table(name = "PremiumDetails")
 public class PremiumDetails3 {
